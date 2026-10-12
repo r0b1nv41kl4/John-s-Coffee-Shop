@@ -1,11 +1,17 @@
 @import 'tailwindcss';
-@media screen and (max-width: 600px) {
+@font-face {
+  font-family: sora-regular;
+  src: url('./assets/fonts/Sora-Regular.ttf');
+}
+@font-face {
+  font-family: sora-semibold;
+  src: url('./assets/fonts/Sora-SemiBold.ttf');
 }
 
 body {
   margin: 0;
   background-color: white;
-  font-family: Tahoma, sans-serif;
+  font-family: sora-regular, sans-serif;
 }
 
 .bg-image {
@@ -31,10 +37,10 @@ body {
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
-  font-family: Tahoma, sans-serif;
 }
 
 .front-page h1 {
+  font-family: sora-semibold, sans-serif;
   font-size: 32px;
 }
 
@@ -45,33 +51,33 @@ body {
 .front-page h1,
 .front-page p {
     position: relative;
-    z-index: 1;
     text-shadow: 0 2px 8px rgb(0 0 0 / 75%);
 }
 
 .front-page .start-button {
   position: relative;
-  z-index: 1;
   margin-top: 5px;
   padding: 15px 80px;
   font-size: 16px;
   background-color: #c67c4e;
   color: white;
-  border: none;
   border-radius: 8px;
   cursor: pointer;
   display: inline-block;
-  text-decoration: none;
 }
 
 .promotions {
   background-color: #313131;
   color: white;
-  font-family: Tahoma, sans-serif;
 }
 
 .promotions p {
   padding: 40px 0px 0px 20px;
+}
+
+.promotions b {
+  font-family: sora-semibold, sans-serif;
+  font-size: 17px;
 }
 
 .promo-ban {
@@ -83,7 +89,6 @@ body {
 
 .menu {
   color: black;
-  font-family: Tahoma, sans-serif;
   padding: 20px;
 }
 
@@ -171,13 +176,74 @@ body {
 }
 
 .menu-item h2 {
-  margin: 12px 12px 8px;
+  margin: 12px 12px 4px;
   font-size: 1rem;
 }
 
 .menu-item p {
-  margin: 0 12px 12px;
+  margin: 0px 12px 4px;
   font-size: 0.8rem;
   line-height: 1.4;
   color: #666;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price h2 {
+  margin: auto;
+  margin-left: 12px;
+  font-size: 1rem;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: 8px;
+  padding: 7px;
+  background-color: #c67c4e;
+  color: white;
+  border-radius: 8px;
+}
+
+.buy-button img {
+  width: 22px;
+  height: 22px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-button, .footer-button-selected {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.footer-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-button-selected img {
+  width: 36px;
+  height: 36px;
 }

@@ -247,3 +247,41 @@ body {
   width: 36px;
   height: 36px;
 }
+
+.item-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px 35px;
+}
+
+.back-menu {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+}
+
+.item-header h3 {
+  font-family: sora-semibold, sans-serif;
+  font-size: 17px;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.item-header button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.item-heart {
+  width: 20px;
+  height: 20px;
+  display: block;
+}

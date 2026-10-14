@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+
+    <title>John's Order</title>
+</head>
+<body>
+    <header class="top-bar">
+          <button class="icon-btn plain"><img src="./src/assets/arrow.svg"/></button>
+          <h1>Order</h1>
+          <span class="spacer"></span>
+        </header>
+
+        <div class="order-body">
+          <div class="toggle">
+            <button class="toggle-btn active">Deliver</button>
+            <button class="toggle-btn">Pick Up</button>
+          </div>
+
+          <div class="address">
+            <h3>Delivery Address:</h3>
+            <p class="bold street">Jl. Kpg Sutoyo</p>
+            <p class="muted small">Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.</p>
+            <div class="pill-row">
+              <button class="pill"><span class="pill-icon"><img src="./src/assets/edit.svg"/></span>Edit Address</button>
+              <button class="pill"><span class="pill-icon"><img src="./src/assets/note.svg"/></span>Add Note</button>
+            </div>
+          </div>
+
+          <hr class="short">
+
+          <div class="order-item">
+            <div class="thumb"><img src="./src/img/caffe-mocha.png"/></div>
+            <div class="item-info">
+              <p class="bold">Caffe Mocha</p>
+              <p class="muted small">Deep Foam</p>
+            </div>
+            <div class="stepper">
+              <button class="step-btn">&minus;</button>
+              <span>1</span>
+              <button class="step-btn">+</button>
+            </div>
+          </div>
+
+          <button class="discount">
+            <span class="discount-icon"><img src="./src/assets/discount.svg"/></span>
+            <span class="bold discount-text">1 Discount Applied</span>
+            <span class="arrow"><img src="./src/assets/arrow-right.svg"/></span>
+          </button>
+
+          <div class="summary">
+            <h3>Payment Summary</h3>
+            <div class="row"><span>Price</span><span class="bold">$ 4.53</span></div>
+            <div class="row"><span>Delivery Fee</span><span class="bold">$ 1.0</span></div>
+            <div class="row total"><span class="bold">Total</span><span class="bold">$ 5.53</span></div>
+          </div>
+        </div>
+
+        <footer class="bottom-bar column">
+          <div class="payment-row">
+            <span class="wallet-icon"><img src="./src/assets/Wallet.svg"/></span>
+            <div class="payment-info">
+              <span class="bold">Cash/Wallet</span>
+              <span class="accent bold small">$ 10.00</span>
+            </div>
+            <span class="arrow"><img src="./src/assets/arrow-down.svg"/></span>
+          </div>
+          <button class="btn order">Order</button>
+        </footer>
+</body>
+</html>

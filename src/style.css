@@ -66,6 +66,8 @@ body {
   display: inline-block;
 }
 
+/* 2. Menu */
+
 .promotions {
   background-color: #313131;
   color: white;
@@ -220,7 +222,7 @@ body {
   flex-direction: row;
   align-items: center;
   background-color: #fff;
-  color: white;
+  color: #1d1d1d;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -248,12 +250,14 @@ body {
   height: 36px;
 }
 
+/* 3. Item */
+
 .item-header {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 35px 20px 35px;
+  padding: 40px 20px 40px;
 }
 
 .back-menu {
@@ -284,4 +288,388 @@ body {
   width: 20px;
   height: 20px;
   display: block;
+}
+
+.item-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 85%;
+  border-radius: 16px;
+}
+
+.detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 22px 0;
+}
+
+.hero-img {
+  height: 185px;
+  border-radius: 16px;
+  background: #3a2a22;
+  background-size: cover;
+  background-position: center;
+}
+
+.title-row { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin: 20px 32px;
+}
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title-info h2 { 
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rating { 
+  display: flex;
+  align-items: center; 
+  gap: 4px; 
+  margin-top: 4px; 
+}
+
+.star { 
+  display: flex; 
+  width: 20px; 
+  height: 20px; 
+  margin-bottom: 3px;
+}
+
+.item-icons { 
+  display: flex; 
+  justify-content: center;
+  gap: 12px;
+  align-self: center;
+}
+
+.item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #f0eeed;
+  border-radius: 12px;
+}
+
+.item-line {
+  display: flex;
+  justify-content: center;
+  color: #e3e3e3;
+  width: 85%;
+  margin: auto;
+}
+
+.description {
+  margin: 20px 20px;
+}
+
+.description p { 
+  font-size: 14px; 
+  line-height: 1.55; 
+  color: #9b9b9b;
+}
+
+.description b {
+  font-family: sora-semibold;
+  color:#c67c4e
+}
+
+.selects { 
+  display: flex; 
+  gap: 16px; 
+  margin-left: 20px;
+}
+
+.select-group { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 6px; 
+  font-size: 15px; 
+}
+
+.select-group select {
+  height: 28px;
+  padding: 0 8px;
+  font-size: 12px;
+  background: #ededed;
+  border: none;
+  border-radius: 6px;
+  width: 106px;
+}
+.select-group select.narrow { 
+  width: 29px; 
+  padding: 0 2px; 
+}
+
+.bottom-bar.column { flex-direction: column; align-items: stretch; gap: 14px; padding-top: 14px; }
+
+.price-box { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 2px; 
+}
+
+.price-box p {
+  font-size: 14px; 
+  line-height: 1.55; 
+  color: #9b9b9b;
+}
+
+.price-box h2 {
+  font-size: 18px;
+  color:#c67c4e
+}
+
+.button-buy { 
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 50px;
+  margin-right: 10px;
+  color: white;
+  background-color: #c67c4e;
+  padding: 15px 10px;
+  border-radius: 15px;
+}
+
+/* 4. Order */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 22px 8px;
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-family: sora-semibold, sans-serif;
+  font-size: 18px;
+}
+
+.order-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 22px 22px 0;
+}
+
+.toggle {
+  display: flex;
+  padding: 4px;
+  background: #ececec;
+  border-radius: 12px;
+}
+
+.toggle-btn {
+  flex: 1;
+  height: 34px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.toggle-btn.active { 
+  background:#c67c4e; 
+  color: white; 
+  font-weight: 600; 
+}
+
+.address { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 4px; 
+}
+
+.address h3 { 
+  font-size: 15px; 
+  font-weight: 600; 
+  margin-bottom: 4px; 
+}
+
+.street { 
+  font-size: 14px; 
+}
+
+.pill-row { 
+  display: flex; 
+  gap: 8px; 
+  margin-top: 10px; 
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  background: white;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+}
+
+.pill-icon { 
+  display: flex; 
+  width: 14px; 
+  height: 14px; 
+}
+
+hr.short { 
+  margin: 0 14px; 
+}
+
+.order-item { 
+  display: flex; 
+  align-items: center; 
+  gap: 14px; 
+}
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  background: #3a2a22;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.item-info { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 2px; 
+  flex: 1; 
+}
+
+.stepper { 
+  display: flex; 
+  align-items: center; 
+  gap: 14px; 
+  font-weight: 600; 
+}
+
+.step-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 14px;
+  margin: 0 -8px;
+  background: white;
+  border: 1px solid #e4e4e4;
+  border-radius: 14px;
+  text-align: left;
+}
+
+.discount-icon, .chevron { 
+  display: flex; 
+  width: 20px; 
+  height: 20px; 
+}
+
+.discount-text { 
+  flex: 1; 
+  font-size: 14px; 
+}
+
+.summary { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.summary h3 { 
+  font-size: 15px; 
+  font-weight: 600; 
+  margin-bottom: 4px; 
+}
+
+.row { 
+  display: flex; 
+  justify-content: space-between; 
+  font-size: 14px; 
+}
+
+.row.total { 
+  margin-top: 2px; 
+}
+
+.payment-row { display: flex; align-items: center; gap: 12px; }
+.wallet-icon { display: flex; width: 24px; height: 24px; }
+.payment-info { display: flex; flex-direction: column; flex: 1; font-size: 14px; }
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.spacer {
+  width: 36px;
+}
+
+.bold {
+  font-family: sora-semibold, sans-serif;
+}
+
+.muted {
+  color: #9b9b9b;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.bottom-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 14px;
+  padding: 16px 22px;
+  background: white;
+  border-radius: 20px 20px 0 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 50px;
+  border: 0;
+  border-radius: 14px;
+  color: white;
+  background:#c67c4e;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn.order {
+  width: 100%;
 }

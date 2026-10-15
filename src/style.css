@@ -1,11 +1,11 @@
 @import 'tailwindcss';
 @font-face {
   font-family: sora-regular;
-  src: url('./assets/fonts/Sora-Regular.ttf');
+  src: url('/src/assets/fonts/Sora-Regular.ttf');
 }
 @font-face {
   font-family: sora-semibold;
-  src: url('./assets/fonts/Sora-SemiBold.ttf');
+  src: url('/src/assets/fonts/Sora-SemiBold.ttf');
 }
 
 body {
@@ -50,8 +50,8 @@ body {
 
 .front-page h1,
 .front-page p {
-    position: relative;
-    text-shadow: 0 2px 8px rgb(0 0 0 / 75%);
+  position: relative;
+  text-shadow: 0 2px 8px rgb(0 0 0 / 75%);
 }
 
 .front-page .start-button {
@@ -86,7 +86,7 @@ body {
   width: 100%;
   height: auto;
   padding: 20px;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 .menu {
@@ -131,7 +131,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 10px;
-  overflow-x:auto;
+  overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 6px;
   scrollbar-width: thin;
@@ -232,7 +232,8 @@ body {
   border-radius: 20px 20px 0 0;
 }
 
-.footer-button, .footer-button-selected {
+.footer-button,
+.footer-button-selected {
   background-color: #fff;
   border: none;
   padding: 10px;
@@ -314,10 +315,10 @@ body {
   background-position: center;
 }
 
-.title-row { 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: flex-start; 
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 20px 32px;
 }
 
@@ -327,27 +328,27 @@ body {
   gap: 4px;
 }
 
-.title-info h2 { 
+.title-info h2 {
   font-size: 20px;
   font-weight: 600;
 }
 
-.rating { 
+.rating {
   display: flex;
-  align-items: center; 
-  gap: 4px; 
-  margin-top: 4px; 
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
 }
 
-.star { 
-  display: flex; 
-  width: 20px; 
-  height: 20px; 
+.star {
+  display: flex;
+  width: 20px;
+  height: 20px;
   margin-bottom: 3px;
 }
 
-.item-icons { 
-  display: flex; 
+.item-icons {
+  display: flex;
   justify-content: center;
   gap: 12px;
   align-self: center;
@@ -375,28 +376,28 @@ body {
   margin: 20px 20px;
 }
 
-.description p { 
-  font-size: 14px; 
-  line-height: 1.55; 
+.description p {
+  font-size: 14px;
+  line-height: 1.55;
   color: #9b9b9b;
 }
 
 .description b {
   font-family: sora-semibold;
-  color:#c67c4e
+  color: #c67c4e;
 }
 
-.selects { 
-  display: flex; 
-  gap: 16px; 
+.selects {
+  display: flex;
+  gap: 16px;
   margin-left: 20px;
 }
 
-.select-group { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 6px; 
-  font-size: 15px; 
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
 }
 
 .select-group select {
@@ -408,31 +409,36 @@ body {
   border-radius: 6px;
   width: 106px;
 }
-.select-group select.narrow { 
-  width: 29px; 
-  padding: 0 2px; 
+.select-group select.narrow {
+  width: 29px;
+  padding: 0 2px;
 }
 
-.bottom-bar.column { flex-direction: column; align-items: stretch; gap: 14px; padding-top: 14px; }
+.bottom-bar.column {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+  padding-top: 14px;
+}
 
-.price-box { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 2px; 
+.price-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .price-box p {
-  font-size: 14px; 
-  line-height: 1.55; 
+  font-size: 14px;
+  line-height: 1.55;
   color: #9b9b9b;
 }
 
 .price-box h2 {
   font-size: 18px;
-  color:#c67c4e
+  color: #c67c4e;
 }
 
-.button-buy { 
+.button-buy {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -481,32 +487,32 @@ body {
   border-radius: 10px;
 }
 
-.toggle-btn.active { 
-  background:#c67c4e; 
-  color: white; 
-  font-weight: 600; 
+.toggle-btn.active {
+  background: #c67c4e;
+  color: white;
+  font-weight: 600;
 }
 
-.address { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 4px; 
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.address h3 { 
-  font-size: 15px; 
-  font-weight: 600; 
-  margin-bottom: 4px; 
+.address h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-.street { 
-  font-size: 14px; 
+.street {
+  font-size: 14px;
 }
 
-.pill-row { 
-  display: flex; 
-  gap: 8px; 
-  margin-top: 10px; 
+.pill-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .pill {
@@ -520,20 +526,20 @@ body {
   border-radius: 20px;
 }
 
-.pill-icon { 
-  display: flex; 
-  width: 14px; 
-  height: 14px; 
+.pill-icon {
+  display: flex;
+  width: 14px;
+  height: 14px;
 }
 
-hr.short { 
-  margin: 0 14px; 
+hr.short {
+  margin: 0 14px;
 }
 
-.order-item { 
-  display: flex; 
-  align-items: center; 
-  gap: 14px; 
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .thumb {
@@ -544,18 +550,18 @@ hr.short {
   border-radius: 8px;
 }
 
-.item-info { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 2px; 
-  flex: 1; 
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
 }
 
-.stepper { 
-  display: flex; 
-  align-items: center; 
-  gap: 14px; 
-  font-weight: 600; 
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 600;
 }
 
 .step-btn {
@@ -581,42 +587,56 @@ hr.short {
   text-align: left;
 }
 
-.discount-icon, .chevron { 
-  display: flex; 
-  width: 20px; 
-  height: 20px; 
+.discount-icon,
+.chevron {
+  display: flex;
+  width: 20px;
+  height: 20px;
 }
 
-.discount-text { 
-  flex: 1; 
-  font-size: 14px; 
+.discount-text {
+  flex: 1;
+  font-size: 14px;
 }
 
-.summary { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 10px; 
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.summary h3 { 
-  font-size: 15px; 
-  font-weight: 600; 
-  margin-bottom: 4px; 
+.summary h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
-.row { 
-  display: flex; 
-  justify-content: space-between; 
-  font-size: 14px; 
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
-.row.total { 
-  margin-top: 2px; 
+.row.total {
+  margin-top: 2px;
 }
 
-.payment-row { display: flex; align-items: center; gap: 12px; }
-.wallet-icon { display: flex; width: 24px; height: 24px; }
-.payment-info { display: flex; flex-direction: column; flex: 1; font-size: 14px; }
+.payment-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.wallet-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 14px;
+}
 
 .icon-btn {
   display: flex;
@@ -665,7 +685,7 @@ hr.short {
   border: 0;
   border-radius: 14px;
   color: white;
-  background:#c67c4e;
+  background: #c67c4e;
   font: inherit;
   cursor: pointer;
 }
